@@ -3,6 +3,7 @@
   import Sidenav from '../shared/components/ui/Sidenav/Sidenav.svelte';
   import type { SidenavItemProps } from '../shared/components/ui/Sidenav/SidenavItem.props';
   import { v4 as uuidv4 } from 'uuid';
+  import Header from '../shared/components/ui/Header/Header.svelte';
 
   const items: SidenavItemProps[] = [
     {
@@ -32,4 +33,7 @@
   ];
 </script>
 
-<Sidenav {items} />
+<div>
+  <Header />
+  <Sidenav {items} />
+</div>
