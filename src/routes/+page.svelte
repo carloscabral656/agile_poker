@@ -33,7 +33,16 @@
   ];
 </script>
 
-<div>
+<div class="min-h-screen">
   <Header />
-  <Sidenav {items} />
+
+  <div class="grid grid-cols-12">
+    <aside class="col-span-2">
+      <Sidenav {items} />
+    </aside>
+
+    <main class="col-span-10 p-4">
+      <h1>zsdasdasdadsasd</h1>
+    </main>
+  </div>
 </div>
