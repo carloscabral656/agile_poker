@@ -1,10 +1,10 @@
 <script lang="ts">
-  import './layout.css';
   import { ListCheck, MessageCircle, Radio, Users } from '@lucide/svelte';
   import { v4 as uuidv4 } from 'uuid';
   import Header from '../shared/components/ui/Header/Header.svelte';
   import Sidenav from '../shared/components/ui/Sidenav/Sidenav.svelte';
   import type { SidenavItemProps } from '../shared/components/ui/Sidenav/SidenavItem.props';
+  import './layout.css';
 
   let { children } = $props();
 
@@ -44,7 +44,7 @@
       <Sidenav {items} />
     </aside>
 
-    <main class="col-span-10 bg-[#040e1f] p-4 text-[#E2E8F0]">
+    <main class="col-span-10 bg-[#040e1f] text-[#E2E8F0]">
       {@render children()}
     </main>
   </div>
